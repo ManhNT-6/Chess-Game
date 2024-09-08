@@ -1,8 +1,6 @@
 package src.main;
 
-import src.pieces.Tot;
-import src.pieces.Ma;
-import src.pieces.Piece;
+import src.pieces.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -18,11 +16,14 @@ public class Board extends JPanel {
     }
 
     public void addPiece(){
+
+        // Thêm mã
         pieceList.add(new Ma(this,1,0,false));
-        pieceList.add(new Ma(this,1,7,true));
         pieceList.add(new Ma(this,6,0,false));
+        pieceList.add(new Ma(this,1,7,true));
         pieceList.add(new Ma(this,6,7,true));
 
+        // Thêm tốt
         pieceList.add(new Tot(this,0,1,false));
         pieceList.add(new Tot(this,1,1,false));
         pieceList.add(new Tot(this,2,1,false));
@@ -31,6 +32,34 @@ public class Board extends JPanel {
         pieceList.add(new Tot(this,5,1,false));
         pieceList.add(new Tot(this,6,1,false));
         pieceList.add(new Tot(this,7,1,false));
+        pieceList.add(new Tot(this,0,6,true));
+        pieceList.add(new Tot(this,1,6,true));
+        pieceList.add(new Tot(this,2,6,true));
+        pieceList.add(new Tot(this,3,6,true));
+        pieceList.add(new Tot(this,4,6,true));
+        pieceList.add(new Tot(this,5,6,true));
+        pieceList.add(new Tot(this,6,6,true));
+        pieceList.add(new Tot(this,7,6,true));
+
+        // Thêm xe
+        pieceList.add(new Xe(this,0,0,false));
+        pieceList.add(new Xe(this,7,0,false));
+        pieceList.add(new Xe(this,0,7,true));
+        pieceList.add(new Xe(this,7,7,true));
+
+        // Thêm tượng
+        pieceList.add(new Tuong(this,2,0,false));
+        pieceList.add(new Tuong(this,5,0,false));
+        pieceList.add(new Tuong(this,2,7,true));
+        pieceList.add(new Tuong(this,5,7,true));
+
+        // Thêm Hậu
+        pieceList.add(new Hau(this,3,0,false));
+        pieceList.add(new Hau(this,3,7,true));
+
+        // Thêm Vua
+        pieceList.add(new Vua(this,4,0,false));
+        pieceList.add(new Vua(this,4,7,true));
 
 
 
