@@ -33,7 +33,7 @@ public class Main {
                     frame.setVisible(true);
                 }
                 else {
-                    JOptionPane.showMessageDialog(inputFrame, "An error happened. Please enter both Player1'name and Player2'name", "Input Error", JOptionPane.ERROR_MESSAGE);
+                    JOptionPane.showMessageDialog(inputFrame, "An error happened. Please enter both Player1's Name and Player2's Name", "Input Error", JOptionPane.ERROR_MESSAGE);
                 }
             }
         });

@@ -38,7 +38,7 @@ public class Login {
         // Tạo JButton
         startButton = new JButton("Start");
         startButton.setBackground(Color.green);
-        
+
         // Thêm các thành phần vào JPanel với GridBagLayout
         gbc.gridx = 0;
         gbc.gridy = 0;

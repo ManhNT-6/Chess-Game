@@ -14,4 +14,9 @@ public class Ma extends Piece {
         this.name = "Ma";
         this.sprite = sheet.getSubimage(3*sheetScale, isWhite ? 0:sheetScale,sheetScale,sheetScale).getScaledInstance(board.tileSize,board.tileSize, BufferedImage.SCALE_SMOOTH);
     }
+
+    public boolean isValidMovement(int newCol, int newRow){
+        return Math.abs(this.col - newCol) * Math.abs(this.row - newRow) == 2;
+    }
+
 }

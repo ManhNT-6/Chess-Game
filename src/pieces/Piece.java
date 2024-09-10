@@ -22,6 +22,9 @@ public class Piece {
     }
     }
     protected int sheetScale = sheet.getWidth()/6;
+    public boolean isValidMovement(int newCol, int newRow) {return true;}
+    public boolean isObstacle(int newCol, int newRow){return false;}
+    public boolean isFirstMove = true;
 
     Image sprite;
     Board board;
